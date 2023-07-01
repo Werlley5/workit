@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
+
+:root {
+    --color-1: rgb(47, 19, 82); 
+    --color-2: #fff; 
+    --color-3: aquamarine; 
+    --color-4: rgb(108, 218, 181);
+    --color-5: rgba(32, 32, 32, 0.671);
+    --color-6: rgba(255, 255, 255, 0.74); 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open+Sans';
+}
+
+/*barra de navegação*/
+
+header {
+    background-color: var(--color-1);
+    height: 450px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.menu-nav {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.logo h2 {
+    font-family: 'Poppins';
+    color: var(--color-2);
+}
+
+.help {
+    display: flex;
+}
+
+.help p {
+    font-size: 27px;
+    font-family: 'Montserrat';
+    color: var(--color-2);
+}
+
+.nav-btn a {
+    display: inline-block;
+    padding: 8px;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    border-bottom: 2px solid var(--color-3);
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.title h1 {
+    color: var(--color-2);
+    font-size: 46px;
+}
+
+.underline {
+    text-decoration: underline 3px var(--color-3);
+}
+
+.title a {
+    display: inline-block;
+    padding: 9px 14px;
+    background-color: var(--color-4);
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Poppins';
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+/*-----------------------------------------*/
+
+/*sections*/
+
+.mockup-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 80px;
+}
+
+.mockup-img img {
+    max-width: 80%;
+    transform: rotate(-5deg);
+} 
+
+section.cards {
+    padding-top: 40px;
+}
+
+.cont-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 33.3%;
+    padding-right: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.card img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-family: 'Fraunces';
+    color: var(--color-1);
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: var(--color-5);
+}
+
+section.about {
+    padding-top: 150px;
+}
+
+.cont-about {
+    display: flex;
+    justify-content: center;
+}
+
+.cont-about img {
+    width: 230px;
+    border-radius: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.card-about {
+    width: 400px;
+    height: 210px;
+    padding: 30px;
+    background-color: var(--color-1);
+    position: relative;
+    z-index: 5;
+    top: 100px;
+    left: -50px;
+}
+
+.card-about h2 {
+    font-family: 'Fraunces';
+    color: var(--color-2);
+    margin-bottom: 20px;
+}
+
+.card-about p {
+    color: var(--color-6);
+}
+
+.card-about a {
+    display: inline-block;
+    padding: 9px 14px;
+    background-color: var(--color-4);
+    color: black;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: 'Poppins';
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+/*-----------------------------------------*/
+
+/*rodapé*/
+
+footer {
+    padding: 60px 0;
+}
+
+.cont-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-midia {
+    margin-top: 20px;
+}
+
+.footer-midia img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.help-2 {
+    display: flex;
+}
+
+.help-2 h2 {
+    font-family: 'Poppins';
+    color: var(--color-1);
+}
+
+.help-2 p {
+    font-size: 27px;
+    font-family: 'Montserrat';
+    color: var(--color-1);
+}
+
+/*-----------------------------------------*/
+
+
+@media(max-width: 768px) {
+
+    .mockup-img img {
+        max-width: 90%;
+    } 
+
+    section.cards {
+        padding-top: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    section.about {
+        padding-top: 80px;
+    }
+
+    .cont-about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-about {
+        width: 90%;
+        height: 230px;
+        position: relative;
+        z-index: 5;
+        top: -30px;
+        left: 0;
+    }
+
+    footer {
+        padding-top: 30px;
+    }
+}
